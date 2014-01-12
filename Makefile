@@ -1,8 +1,8 @@
 include .wc3settings
 
 
-COMPILETIME_SOURCES = $(shell git grep -l @compiletime -- 'src/*.wurst')
-SOURCES = $(shell find src -type f -name '*.[j,wurst]')
+COMPILETIME_SOURCES = $(shell git grep -l @compiletime -- 'wurst/*.wurst')
+SOURCES = $(shell find wurst -type f -name '*.[j,wurst]')
 
 DIST_FLAGS = -opt -inline
 TEST_FLAGS = -opt -stacktraces
