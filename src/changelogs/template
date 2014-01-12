@@ -1,0 +1,17 @@
+/* THIS FILE WON'T BE INCLUDED BECAUSE IT HAS NEITHER
+ * THE .wurst FILE EXTENSION
+ * 
+ * name vXXXx.wurst
+ */
+
+package V(major)_(minor)_(rev)
+//--ex: V2_88_a for v. 2.88a, == {major:2, minor:88, rev:a}
+
+import ChangeLog
+
+
+init
+  ChangeLog changes = ChangeLog.create( (major), (minor), '(rev)' )
+    ..add("1st change goes here...")
+    ..add("2nd change goes here...")
+    //...
